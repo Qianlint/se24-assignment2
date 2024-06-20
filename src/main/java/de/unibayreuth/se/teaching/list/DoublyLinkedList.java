@@ -76,9 +76,9 @@ public class DoublyLinkedList {
      * @return Array with list elements (same order)
      */
     public double[] asArray() {
-        double[] array = new double[length+1];
+        double[] array = new double[length];
         Element element = begin;
-        int arrayPos = 1;
+        int arrayPos = 0;
         while (element != null) {
             array[arrayPos] = element.value;
             arrayPos++;
@@ -153,7 +153,7 @@ public class DoublyLinkedList {
     /**
      * Add an element.
      * @param e Element to add
-     */
+
     public void add(Element e) {
         if (isEmpty()) { append(e); }
         else {
@@ -170,6 +170,7 @@ public class DoublyLinkedList {
             }
         }
     }
+     */
 
     /**
      * Inner class for doubly linked list elements
